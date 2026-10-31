@@ -4,7 +4,7 @@ This tool can be used to send multiple messages to a Specified Gmail id.
 Works with any platform id ie yahoo, gmail etc.
 
 ## Disclaimer
-This tool is intended for educational purposes only. It should not be used to spam anyone's gmail id.
+This tool is intended for educational purposes only. It should not be used to spam anyone
 
 ## How to Use
 * Enter the Email which u want to send the messages to in the toaddrs feild.
