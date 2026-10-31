@@ -1,102 +1,116 @@
-# Simple Email-Bomber
+# ⚡ EMAIL-BOMBER
+
+### A Python-based SMTP email sender with an interactive terminal experience.
 
 <p align="center">
-  A minimal Python SMTP automation experiment.
-  <br>
-  Exploring email protocols, SMTP authentication and Python automation.
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SMTP-Gmail%20STARTTLS-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  <img src="https://img.shields.io/badge/Interface-Terminal-111111?style=for-the-badge&logo=windows-terminal&logoColor=white" />
 </p>
-
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python)
-![Protocol](https://img.shields.io/badge/Protocol-SMTP-blue?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Legacy%20-yellow?style=flat-square)
 
 ---
 
-## About
+## `01` — Overview
 
-Email-Bomber is a small Python project demonstrating SMTP-based email communication using Python's built-in `smtplib` library.
+**Email-Bomber** is a lightweight Python application built around Gmail SMTP. It combines email configuration, SMTP authentication, message previews, and an interactive command-line interface.
 
-The original script demonstrates:
-- SMTP server connections
-- STARTTLS encryption
-- SMTP authentication
-- Sender and recipient configuration
-- Message delivery through Python
+Designed with simplicity and a terminal-first experience in mind.
 
-This repository is an experimental learning project, not a production-ready email service.
+## `02` — Features
 
-## Technologies
-
-| Technology | Purpose |
+| Feature | Description |
 |---|---|
-| Python | Core programming language |
-| smtplib | SMTP communication |
-| SMTP | Email transfer protocol |
-| STARTTLS | Connection encryption |
+| ⚡ Interactive CLI | Menu-driven terminal interface |
+| 🎨 Styled Interface | Custom ASCII banner and colored output |
+| 📡 SMTP Integration | Gmail SMTP with STARTTLS |
+| 🔐 Authentication | Gmail App Password support |
+| ✉️ Message Builder | Custom subject and message body |
+| 👁️ Preview | Review message details before sending |
+| 🛠️ Error Handling | SMTP and connection error reporting |
 
-## Installation
+## `03` — Preview
 
-Clone the repository:
+```text
+██████╗  ██████╗ ███╗   ███╗██████╗ ███████╗██████╗
+██╔══██╗██╔═══██╗████╗ ████║██╔══██╗██╔════╝██╔══██╗
+██████╔╝██║   ██║██╔████╔██║██████╔╝█████╗  ██████╔╝
+██╔══██╗██║   ██║██║╚██╔╝██║██╔══██╗██╔══╝  ██╔══██╗
+██████╔╝╚██████╔╝██║ ╚═╝ ██║██████╔╝███████╗██║  ██║
+
+             SMTP TESTING TOOLKIT
+                  VERSION 2.0
+```
+
+## `04` — Installation
+
+**Clone the repository**
 
 ```bash
 git clone https://github.com/AddyXDD/Email-Bomber.git
-```
-
-Navigate into the project:
-
-```bash
 cd Email-Bomber
 ```
 
-No third-party Python packages are required by the original script.
+**Install dependencies**
 
-## Configuration
-
-The original script contains SMTP configuration placeholders:
-
-```python
-import smtplib
-
-smtp_server = "smtp.gmail.com"
-smtp_port = 587
+```bash
+pip install -r requirements.txt
 ```
 
-SMTP authentication should use secure, provider-approved credentials.
+## `05` — Launch
 
-Never hardcode passwords or upload credentials to a public repository.
+```bash
+python email-spammer.py
+```
 
-## Important Security Notice
+### Available options
 
-The original source contains an automated high-volume email loop.
+| Option | Action |
+|:---:|---|
+| `1` | Configure SMTP |
+| `2` | Test SMTP connection |
+| `3` | Preview and send test email |
+| `4` | Exit |
 
-**Do not execute it as published.**
+## `06` — Configuration
 
-Unrestricted repeated email delivery can:
-- Violate email provider policies
-- Trigger spam detection
-- Cause account restrictions
-- Disrupt recipients' inboxes
+| Setting | Value |
+|---|---|
+| SMTP Host | `smtp.gmail.com` |
+| SMTP Port | `587` |
+| Encryption | STARTTLS |
+| Authentication | Gmail App Password |
 
-For legitimate experimentation, use a local mail-testing environment or a controlled, single-message test with an account you own.
+Use a Gmail App Password rather than your regular Google account password.
 
-## Disclaimer
+## `07` — Tech Stack
 
-This project is provided for educational purposes.
+- **Python** — Core application
+- **smtplib** — SMTP communication
+- **EmailMessage** — Email construction
+- **Colorama** — Terminal styling
+- **getpass** — Secure credential input (when configured)
 
-The author does not endorse spam, harassment, phishing, or unauthorized email distribution.
+## `08` — Repository Structure
 
-Users are responsible for ensuring that any testing is authorized and complies with applicable laws and service-provider policies.
+```text
+Email-Bomber/
+│
+├── email-spammer.py
+├── requirements.txt
+└── README.md
+```
 
-## Author
+## `09` — Security & Responsible Use
 
-**AddyXDD**
-
-GitHub: [@AddyXDD](https://github.com/AddyXDD)
+- Keep credentials and App Passwords private.
+- Never commit secrets to GitHub.
+- Only contact recipients who have agreed to receive your messages.
+- Respect Gmail sending restrictions and anti-abuse policies.
 
 ---
 
 <p align="center">
-  Made with Python 🐍
-  <br>
-  <sub>Learn • Experiment • Build</sub>
+  <strong>BUILT WITH PYTHON.</strong>
+  <br/>
+  <sub>Developed by <a href="https://github.com/AddyXDD">AddyXDD</a></sub>
 </p>
