@@ -1,83 +1,102 @@
-# 💀 Email-Bomber
+#Simple Email-Bomber
 
-### A Python-based SMTP email testing utility.
+<p align="center">
+  A minimal Python SMTP automation experiment.
+  <br>
+  Exploring email protocols, SMTP authentication and Python automation.
+</p>
 
-Custom terminal interface • SMTP configuration • Email testing
-
-![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-222222?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Release-green?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python)
+![Protocol](https://img.shields.io/badge/Protocol-SMTP-blue?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Legacy-yellow?style=flat-square)
 
 ---
 
-## Overview
+## About
 
-Email-Bomber is a Python-based terminal application built around SMTP configuration and controlled email delivery testing.
+Email-Bomber is a small Python project demonstrating SMTP-based email communication using Python's built-in `smtplib` library.
 
-Featuring a custom CLI, ASCII typography, terminal colour effects and configurable email parameters.
+The original script demonstrates:
+- SMTP server connections
+- STARTTLS encryption
+- SMTP authentication
+- Sender and recipient configuration
+- Message delivery through Python
 
-## Features
+This repository is an experimental learning project, not a production-ready email service.
 
-- SMTP configuration support
-- Custom email subjects and messages
-- Input validation
-- Error handling
-- Cross-platform terminal support
+## Technologies
 
-
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| smtplib | SMTP communication |
+| SMTP | Email transfer protocol |
+| STARTTLS | Connection encryption |
 
 ## Installation
 
-**Clone the repository**
+Clone the repository:
 
 ```bash
 git clone https://github.com/AddyXDD/Email-Bomber.git
+```
+
+Navigate into the project:
+
+```bash
 cd Email-Bomber
 ```
 
-**Install dependencies**
+No third-party Python packages are required by the original script.
 
-```bash
-pip install colorama simple-chalk
+## Configuration
+
+The original script contains SMTP configuration placeholders:
+
+```python
+import smtplib
+
+smtp_server = "smtp.gmail.com"
+smtp_port = 587
 ```
 
-**Run**
+SMTP authentication should use secure, provider-approved credentials.
 
-```bash
-python email-spammer.py
-```
+Never hardcode passwords or upload credentials to a public repository.
 
-## SMTP Configuration
+## Important Security Notice
 
-| Provider | SMTP Server | Port |
-|---|---|---|
-| Gmail | smtp.gmail.com | 587 |
-| Outlook | smtp-mail.outlook.com | 587 |
-| Yahoo | smtp.mail.yahoo.com | 587 |
+The original source contains an automated high-volume email loop.
 
-Use provider-approved authentication methods.
+**Do not execute it as published.**
 
-## Security
+Unrestricted repeated email delivery can:
+- Violate email provider policies
+- Trigger spam detection
+- Cause account restrictions
+- Disrupt recipients' inboxes
 
-- Only use accounts you own or have permission to test.
-- Respect SMTP provider limits.
-- Never commit credentials.
-- Avoid unsolicited bulk messaging.
+For legitimate experimentation, use a local mail-testing environment or a controlled, single-message test with an account you own.
 
 ## Disclaimer
 
-This project is intended for educational purposes and authorized email-system testing.
+This project is provided for educational purposes.
 
-The author does not encourage spam, harassment, phishing or unauthorized email distribution.
+The author does not endorse spam, harassment, phishing, or unauthorized email distribution.
+
+Users are responsible for ensuring that any testing is authorized and complies with applicable laws and service-provider policies.
 
 ## Author
 
 **AddyXDD**
 
-[GitHub Profile](https://github.com/AddyXDD)
+GitHub: [@AddyXDD](https://github.com/AddyXDD)
 
 ---
 
 <p align="center">
-  Built with Python 🐍
+  Made with Python 🐍
+  <br>
+  <sub>Learn • Experiment • Build</sub>
 </p>
