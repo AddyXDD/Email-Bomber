@@ -1,4 +1,4 @@
-#Simple Email-Bomber
+# Simple Email-Bomber
 
 <p align="center">
   A minimal Python SMTP automation experiment.
@@ -8,7 +8,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python)
 ![Protocol](https://img.shields.io/badge/Protocol-SMTP-blue?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Legacy-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Legacy%20-yellow?style=flat-square)
 
 ---
 
